@@ -15,7 +15,6 @@ public class App
 
         ChromeOptions options = new ChromeOptions();
 
-        
         options.addArguments("--headless=new");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
@@ -29,8 +28,8 @@ public class App
 
         Thread.sleep(2000);
 
-        
         System.out.println("Page Title: " + driver.getTitle());
 
         driver.quit();
     }
+}
